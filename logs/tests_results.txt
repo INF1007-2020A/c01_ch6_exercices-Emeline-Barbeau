@@ -1,0 +1,71 @@
+test_anagram (__main__.TestExercice) ... FAIL
+test_doubles (__main__.TestExercice) ... FAIL
+test_grades (__main__.TestExercice) ... FAIL
+test_histogram (__main__.TestExercice) ... FAIL
+test_order (__main__.TestExercice) ... FAIL
+
+======================================================================
+FAIL: test_anagram (__main__.TestExercice)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "test_exercice.py", line 40, in test_anagram
+    'Erreur dans la vérification de l\'anagramme'
+AssertionError: Lists differ: [False, False] != [True, False]
+
+First differing element 0:
+False
+True
+
+- [False, False]
++ [True, False] : Erreur dans la vérification de l'anagramme
+
+======================================================================
+FAIL: test_doubles (__main__.TestExercice)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "test_exercice.py", line 55, in test_doubles
+    'Erreur dans les doublons'
+AssertionError: Lists differ: [True, False] != [False, True]
+
+First differing element 0:
+True
+False
+
+- [True, False]
++ [False, True] : Erreur dans les doublons
+
+======================================================================
+FAIL: test_grades (__main__.TestExercice)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "test_exercice.py", line 69, in test_grades
+    'Erreur dans les notes'
+AssertionError: [('Sam', 100.0)] is not an instance of <class 'dict'> : First argument is not a dictionary
+
+======================================================================
+FAIL: test_histogram (__main__.TestExercice)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "test_exercice.py", line 84, in test_histogram
+    'Erreur dans les histogrammes'
+AssertionError: [({'B': 1, 'o': 4, 'n': 2, 'j': 2, 'u': 2, 'r': 2, ',': 1, ' ': 1, 'b': 1}, None), ({'J': 1, "'": 1, 'a': 6, 'd': 1, 'o': 4, 'r': 3, 'e': 7, ' ': 5, 'm': 2, 'n': 4, 'b': 1, 'c': 3, 'l': 3, 'u': 2, 't': 2, 'g': 2, 'i': 5, 'f': 1, 'q': 1, '/': 1}, None)] is not an instance of <class 'dict'> : First argument is not a dictionary
+
+======================================================================
+FAIL: test_order (__main__.TestExercice)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "test_exercice.py", line 25, in test_order
+    'Mauvais ordre'
+AssertionError: Lists differ: [False, False] != [[-2, 1, 6, 9], ['2', 'a', 'hello']]
+
+First differing element 0:
+False
+[-2, 1, 6, 9]
+
+- [False, False]
++ [[-2, 1, 6, 9], ['2', 'a', 'hello']] : Mauvais ordre
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.001s
+
+FAILED (failures=5)
